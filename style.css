@@ -1,0 +1,136 @@
+/* General style and font */
+
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+h1, h2, h3, p {
+    color: hsl(234, 12%, 34%);
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* Header */
+
+
+  header {
+    min-width: 1290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.twoRows {
+  width: 500px;
+}
+
+h1, p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+/* Cards */
+
+.parentFlex {
+    width: 100%;
+    min-width: 1290px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    min-width: 400px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 2%;
+    text-align: justify;
+    padding: 20px 40px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -2px 2px 50px -21px rgba(225,225,225,0);
+    box-shadow: 0px 10px 13px -7px #000000, -2px 2px 50px -21px rgba(225,225,225,0);
+}
+
+.supervisor {
+    border-top: 7px solid hsl(180, 62%, 55%);
+}
+
+.teamBuilder {
+    border-top: 7px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 7px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 7px solid hsl(212, 86%, 64%);
+}
+
+img {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+/* tablet */
+@media only screen and (max-width: 760px) {
+
+    header {
+        min-width: 660px;
+    }
+
+    .parentFlex {
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .twoCards {
+        display: flex;
+    }
+    .teamBuilder, .calculator  {
+      width: 300px;
+    }
+}
+
+/* smartphone */
+@media only screen and (max-width: 480px) {
+
+    header {
+        min-width: 315px;
+    }
+
+    .twoRows {
+        width: 100%;
+    }
+
+    .card {
+        min-width: 315px;
+    }
+
+    .parentFlex {
+        flex-direction: column;
+    }
+    .twoCards {
+        flex-direction: column;
+    }
+
+    .teamBuilder, .calculator  {
+      min-width: 345px;
+    }
+}
